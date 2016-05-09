@@ -39,4 +39,15 @@ public class Annuaire implements Serializable {
         }
         System.out.println("---------------------------------------");          
     }
+
+	public int compte() {
+		 
+		  Iterator<Fiche> iter = table.values().iterator();
+		  int  resultat = 0 ;
+	        while (iter.hasNext()) {
+	          resultat =   resultat+1 ;
+	          iter.next();
+	        }	
+		return resultat ;
+	}
 }

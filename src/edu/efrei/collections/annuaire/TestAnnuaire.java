@@ -14,6 +14,7 @@ public class TestAnnuaire {
             System.out.println("Pour ajouter une personne  : +");
             System.out.println("Pour afficher une personne  : ?");
             System.out.println("Pour afficher toutes les personnes : !");
+            System.out.println("Pour le nombre de fiches : n");
             System.out.println("a toi: ");
             String commande = scanner.nextLine().trim();
             if (commande.equals("."))
@@ -29,6 +30,9 @@ public class TestAnnuaire {
                     break;
                 case '!':
                     annuaire.afficherTout();
+                    break;
+                case 'n':
+                	System.out.println("Le nombre de personne dans notre annuaire  :  "+ annuaire.compte()) ;
                     break;
             }
         }
